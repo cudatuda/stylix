@@ -12,7 +12,7 @@ mkTarget {
     (
       { colors, polarity }:
       {
-        services.vicinae = {
+        programs.vicinae = {
           settings.theme.name = "stylix";
           themes.stylix = {
             meta = {
@@ -54,7 +54,7 @@ mkTarget {
     (
       { opacity }:
       {
-        services.vicinae.settings.window.opacity = opacity.popups;
+        programs.vicinae.settings.window.opacity = opacity.popups;
       }
     )
   ];
